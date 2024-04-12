@@ -1,0 +1,43 @@
+.content_card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.card{
+    width: 80%;
+    border: solid 2px #ffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 2% 0%;
+}
+.description{
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.description .titulo_card{
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+.description .products_list{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.description .products_list buttton{
+    border: solid 2px #ffffff80;
+    border-radius: 10px;
+    padding: 4% !important;
+    white-space: nowrap;
+}
+.card:nth-child(2n){
+    margin-left: 20%;
+    flex-direction: row-reverse;
+}
