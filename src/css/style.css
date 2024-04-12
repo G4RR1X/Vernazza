@@ -24,3 +24,11 @@ main{
     margin-top: 105px !important;
     margin: auto;
 }
+
+.content_img{
+    width: 20%;
+}
+
+img{
+    width: 100%;
+}
