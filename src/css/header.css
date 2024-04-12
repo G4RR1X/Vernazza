@@ -53,4 +53,8 @@ nav ul li:hover hr{
     nav{
         margin-left: 8%;
     }
+       img{
+        height: 200%;
+        width: 100%;
+    }
 }
