@@ -38,7 +38,8 @@ button {
     color: white;
     font-size: 18px;
     padding: 10px 20px;
-    border: 2px solid white; /* Borde blanco */
+    margin-bottom: 10px;
+    border: 2px solid white; 
     border-radius: 5px;
     cursor: pointer;
 }
