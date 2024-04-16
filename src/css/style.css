@@ -32,3 +32,14 @@ main{
 img{
     width: 100%;
 }
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
