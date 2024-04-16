@@ -13,6 +13,16 @@
 </head>
 <body>
     <header>
+                <script>
+            function enviarMensaje(producto) {
+                // Reemplaza 'NUMERODETELEFONO' con el número de teléfono de la repostería en WhatsApp (incluyendo el código de país)
+                const numeroTelefono = '+524561871492';
+                const mensaje = `Me interesa el: ${producto}`;
+        
+                // Abre WhatsApp con el mensaje predefinido
+                window.location.href = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
+            }
+        </script>
         <div class="content_header">
             <div class="content_logo">
                 <h1>Reposteria Vernazza</h1>
