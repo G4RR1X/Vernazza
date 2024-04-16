@@ -7,19 +7,16 @@
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/cards.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="icon" type="image/jpg" href="src/img/VERNAZZA-removebg-preview.png"/>
 
+    <link rel="icon" type="image/jpg" href="src/img/VERNAZZA-removebg-preview.png"/>
     <title>Vernazza</title>
 </head>
 <body>
     <header>
-                <script>
+        <script>
             function enviarMensaje(producto) {
-                // Reemplaza 'NUMERODETELEFONO' con el número de teléfono de la repostería en WhatsApp (incluyendo el código de país)
                 const numeroTelefono = '+524561871492';
-                const mensaje = `Me interesa el: ${producto}`;
-        
-                // Abre WhatsApp con el mensaje predefinido
+                const mensaje = `¡Hola! Me interesa el ${producto}. ¿Podrías darme más información?`;
                 window.location.href = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
             }
         </script>
@@ -47,11 +44,11 @@
                         <button onclick="enviarMensaje('Pastel en rebanada de Vainilla')">Vainilla $35</button>
                         <button onclick="enviarMensaje('Pastel en rebanada de Chocolate')">Chocolate $35</button>
                         <button onclick="enviarMensaje('Pastel en rebanada de Mármol')">Mármol $35</button>
-                        <button onclick="enviarMensaje('Pastel en rebanada deCappuccino')">Cappuccino $35</button>
+                        <button onclick="enviarMensaje('Pastel en rebanada de Cappuccino')">Cappuccino $35</button>
                     </div>
                 </div>
                 <div class="content_img">
-                    <img src="src/img/Pastel_de_chocolate.jpg" alt="">
+                    <img src="src/img/Pastel_de_chocolate.jpg" alt="Imagen de pastel de chocolate">
                 </div>
             </div>
             <div class="card">
@@ -60,9 +57,9 @@
                         <h2>Panqué (Rebanada)</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Naranja $30</buttton>
-                        <buttton>Zanahoria $30</buttton>
-                        <buttton>Calabaza $30</buttton>
+                        <button onclick="enviarMensaje('Panqué en rebanada de Naranja')">Naranja $30</button>
+                        <button onclick="enviarMensaje('Panqué en rebanada de Zanahoria')">Zanahoria $30</button>
+                        <button onclick="enviarMensaje('Panqué en rebanada de Calabaza')">Calabaza $30</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -75,8 +72,7 @@
                         <h2>Brownie </h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Rebanada $35</buttton>
-
+                        <button onclick="enviarMensaje('Brownie')">Rebanada $35</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -89,8 +85,7 @@
                         <h2>Pay de queso</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Rebanada $35</buttton>
-
+                        <button onclick="enviarMensaje('Pay de queso')">Rebanada $35</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -103,8 +98,7 @@
                         <h2>Chocoflan</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Rebanada $35</buttton>
-
+                        <button onclick="enviarMensaje('Chocoflan')">Rebanada $35</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -117,12 +111,10 @@
                         <h2>Galletas</h2>
                     </div>
                     <div class="products_list">
-                        <p>Pasticetas</p>
-                        <buttton>Bolsita c/5 piezas $18</buttton>
-                        <buttton>c/10 piezas $25</buttton>
-                        <buttton>Orejitas y Campechanas</buttton>
-                        <buttton>Bolsita c/4 piezas $12</buttton>
-
+                        <button onclick="enviarMensaje('Pasticetas')">Bolsita c/5 piezas $18</button>
+                        <button onclick="enviarMensaje('Pasticetas')">c/10 piezas $25</button>
+                        <button onclick="enviarMensaje('Orejitas y Campechanas')">Orejitas y Campechanas</button>
+                        <button onclick="enviarMensaje('Orejitas y Campechanas')">Bolsita c/4 piezas $12</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -135,8 +127,8 @@
                         <h2>Galletas decoradas</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Mediana $35</buttton>
-                        <buttton>Grande $50</buttton>
+                        <button onclick="enviarMensaje('Galletas decoradas Mediana')">Mediana $35</button>
+                        <button onclick="enviarMensaje('Galletas decoradas Grande')">Grande $50</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -146,13 +138,12 @@
             <div class="card">
                 <div class="description">
                     <div class="titulo_card">
-                        <h2>Porcion de gelatina</h2>
+                        <h2>Porción de gelatina</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Cereza/Fresa $25</buttton>
-                        <buttton>Naranja/Mango $25</buttton>
-                        <buttton>Vainilla $25</buttton>
-
+                        <button onclick="enviarMensaje('Porción de gelatina Cereza/Fresa')">Cereza/Fresa $25</button>
+                        <button onclick="enviarMensaje('Porción de gelatina Naranja/Mango')">Naranja/Mango $25</button>
+                        <button onclick="enviarMensaje('Porción de gelatina Vainilla')">Vainilla $25</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -162,12 +153,11 @@
             <div class="card">
                 <div class="description">
                     <div class="titulo_card">
-                        <h2>Cheescake (Rebanada)</h2>
+                        <h2>Cheesecake (Rebanada)</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Oreo $35</buttton>
-                        <buttton>Fresa $35</buttton>
-
+                        <button onclick="enviarMensaje('Cheesecake Oreo')">Oreo $35</button>
+                        <button onclick="enviarMensaje('Cheesecake Fresa')">Fresa $35</button>
                     </div>
                 </div>
                 <div class="content_img">
@@ -179,7 +169,7 @@
     <footer>
         <div class="content_footer">
             <div class="titulo_footer">
-                <h1>Resposteria Vernazza</h1>
+                <h1>Reposteria Vernazza</h1>
             </div>
             <div class="content_contact">
                 <div class="telefono">
@@ -187,6 +177,9 @@
                 </div>
                 <div class="ubicacion">
                     <h3>Calle: Refugio Aguilar #36 comunidad de San Antonio de Mogotes</h3>
+                </div>
+                <div class="Instagram">
+                    <h3>Instagram: @Vernazza_pp</h3>
                 </div>
             </div>
         </div>
