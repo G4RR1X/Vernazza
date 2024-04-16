@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/cards.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="icon" type="image/jpg" href="src/img/VERNAZZA-removebg-preview.png"/>
-
     <title>Vernazza</title>
 </head>
 <body>
     <header>
+        <script>
+            function enviarMensaje(producto) {
+                const numeroTelefono = '+524561871492';
+                const mensaje = `¡Hola! Me interesa el ${producto}. ¿Podrías darme más información?`;
+
+                window.location.href = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
+            }
+        </script>
         <div class="content_header">
             <div class="content_logo">
                 <h1>Reposteria Vernazza</h1>
@@ -20,7 +26,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a><hr></li>
-                    <li><a  href="+info.html">+Info</a><hr></li>
+                    <li><a href="+info.html">+Info</a><hr></li>
                 </ul>
             </nav>
         </div>
@@ -30,19 +36,20 @@
             <div class="card">
                 <div class="description">
                     <div class="titulo_card">
-                        <h2>Café Instantaneo</h2>
+                        <h2>Café Instantáneo</h2>
                     </div>
                     <div class="products_list">
-                        <p>Clasico de Hoya</p>
-                        <buttton>Mediano $18</buttton>
-                        <buttton>Grande $24</buttton>
+                        <p>Clásico de Hoya</p>
+                        <button onclick="enviarMensaje('Café Instantáneo Mediano')">Mediano $18</button>
+                        <button onclick="enviarMensaje('Café Instantáneo Grande')">Grande $24</button>
                         <p>Con o sin crema</p>
                     </div>
                 </div>
                 <div class="content_img">
-                        <img src="/src/img/Cafe_instantaneo.jpg" alt="">
+                    <img src="/src/img/Cafe_instantaneo.jpg" alt="Imagen de café instantáneo">
                 </div>
             </div>
+        </div>
         <div class="content_card">
             <div class="card">
                 <div class="description">
@@ -50,14 +57,15 @@
                         <h2>Frappe</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Mediano $18</buttton>
-                        <buttton>Grande $24</buttton>
+                        <button onclick="enviarMensaje('Frappe Mediano')">Mediano $18</button>
+                        <button onclick="enviarMensaje('Frappe Grande')">Grande $24</button>
                     </div>
                 </div>
                 <div class="content_img">
-                    <img src="src/img/Frappe.jpg" alt="">
+                    <img src="src/img/Frappe.jpg" alt="Imagen de frappe">
                 </div>
             </div>
+        </div>
         <div class="content_card">
             <div class="card">
                 <div class="description">
@@ -65,15 +73,16 @@
                         <h2>Café de Cafetera</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Mediano $22</buttton>
-                        <buttton>Grande $28</buttton>
-                        <p>con o sin crema</p>
+                        <button onclick="enviarMensaje('Café de Cafetera Mediano')">Mediano $22</button>
+                        <button onclick="enviarMensaje('Café de Cafetera Grande')">Grande $28</button>
+                        <p>Con o sin crema</p>
                     </div>
                 </div>
                 <div class="content_img">
-                    <img src="src/img/Cafe_cafetera.jpg" alt="">
+                    <img src="src/img/Cafe_cafetera.jpg" alt="Imagen de café de cafetera">
                 </div>
             </div>
+        </div>
         <div class="content_card">
             <div class="card">
                 <div class="description">
@@ -81,25 +90,26 @@
                         <h2>Té</h2>
                     </div>
                     <div class="products_list">
-                        <buttton>Mediano $18</buttton>
-                        <buttton>Grande $24</buttton>
+                        <button onclick="enviarMensaje('Té Mediano')">Mediano $18</button>
+                        <button onclick="enviarMensaje('Té Grande')">Grande $24</button>
                         <ul>
                             <li>Azares</li>
                             <li>Lavanda</li>
                             <li>Manzanilla</li>
-                            <li>Limnón</li>
+                            <li>Limón</li>
                         </ul>
                     </div>
                 </div>
                 <div class="content_img">
-                    <img src="src/img/Té.jpg" alt="">
+                    <img src="src/img/Té.jpg" alt="Imagen de té">
                 </div>
             </div>
-
+        </div>
+    </main>
     <footer>
         <div class="content_footer">
             <div class="titulo_footer">
-                <h1>Resposteria Vernazza</h1>
+                <h1>Reposteria Vernazza</h1>
             </div>
             <div class="content_contact">
                 <div class="telefono">
